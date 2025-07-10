@@ -34,4 +34,4 @@ Got any suggestions on what should be added next? Feel free to share it by [crea
 
 Thanks for considering contributing! To get started fork this repository, make your changes, and create a PR.
 
-If you are new to StationAPI consider watching the following videos on Babric/StationAPI Minecraft modding: https://www.youtube.com/watch?v=9-sVGjnGJ5s&list=PLa2JWzyvH63wGcj5-i0P12VkJG7PDyo9T
+If you are new to StationAPI, consider watching through [this YouTube series](https://www.youtube.com/watch?v=9-sVGjnGJ5s&list=PLa2JWzyvH63wGcj5-i0P12VkJG7PDyo9T) on Babric/StationAPI Minecraft modding.
