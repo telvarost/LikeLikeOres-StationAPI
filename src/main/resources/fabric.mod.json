@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "likelikeores",
+  "version": "${version}",
+
+  "name": "LikeLikeOres",
+  "description": "Adds new ores and metals that other mods can choose to generate.",
+  "authors": [
+    "Telvarost",
+    "Cultist"
+  ],
+  "contact": {
+    "issues": "https://github.com/telvarost/LikeLikeOres-StationAPI/issues",
+    "homepage": "https://github.com/telvarost/LikeLikeOres-StationAPI/",
+    "sources": "https://github.com/telvarost/LikeLikeOres-StationAPI/"
+  },
+
+  "license": "MIT",
+  "icon": "assets/likelikeores/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "stationapi:event_bus": [
+    ],
+    "stationapi:event_bus_client": [
+    ],
+    "stationapi:event_bus_server": [
+    ],
+    "gcapi3": [
+      "com.github.telvarost.likelikeores.Config"
+    ]
+  },
+  "mixins": [
+    "likelikeores.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": "1.0.0-beta.7.3"
+  },
+
+  "recommends": {
+    "stationapi": ">=2.0.0-alpha.3",
+    "gcapi3": ">=3.0.2",
+    "modmenu": "*"
+  }
+}
