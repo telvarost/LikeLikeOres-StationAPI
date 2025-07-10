@@ -14,7 +14,7 @@ Planned:
 1. Download [an instance of Babric](https://github.com/babric/prism-instance) for Prism Launcher.
 2. Install [Java 17](https://adoptium.net/temurin/releases/) and set the instance to use it.
 3. Add the following mods to the mod folder for the instance:
-   - [LikeLikeOres (this mod)](https://github.com/telvarost/LikeLikeOres-StationAPI/releases)
+   - [LikeLikeOres](https://github.com/telvarost/LikeLikeOres-StationAPI/releases) (This mod)
    - [GlassConfigAPI 3.0.2+](https://modrinth.com/mod/glass-config-api)
    - [Glass Networking](https://modrinth.com/mod/glass-networking)
    - [StationAPI](https://modrinth.com/mod/stationapi)
