@@ -3,9 +3,11 @@
 A StationAPI mod for Minecraft Beta 1.7.3 that adds new resources (metals, minerals, alloys, etc) that other mods can enable and use, solving the problem of multiple mods within a pack adding the same ore.
 * Mod works on Multiplayer with [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) version 3.0+ used to sync configs!
 
-## Like-Like Ores Features
+## Features
 
-Planned: Copper, tin, and silver ore - Bronze, brass, and electrum alloys
+Planned:
+- Copper, tin, and silver ore
+- Bronze, brass, and electrum alloys
 
 ## Installation using Prism Launcher
 
@@ -18,7 +20,7 @@ Planned: Copper, tin, and silver ore - Bronze, brass, and electrum alloys
 7. Add this mod to the mod folder for the instance: https://github.com/telvarost/LikeLikeOres-StationAPI/releases
 8. Run and enjoy! 👍
 
-## Developer Instructions
+## Developer Features
 
 Want your mod to depend on LikeLikeOres?
 
