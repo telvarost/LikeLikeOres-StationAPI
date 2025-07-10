@@ -1,6 +1,6 @@
 # LikeLikeOres StationAPI Edition for Minecraft Beta 1.7.3
 
-A StationAPI mod for Minecraft Beta 1.7.3 that adds new resources (metals, minerals, alloys, etc) that other mods can enable and use, solving the problem of multiple modpacks adding the same ore.
+A StationAPI mod for Minecraft Beta 1.7.3 that adds new resources (metals, minerals, alloys, etc) that other mods can enable and use, solving the problem of multiple mods within a pack adding the same ore.
 * Mod works on Multiplayer with [GlassConfigAPI](https://modrinth.com/mod/glass-config-api) version 3.0+ used to sync configs!
 
 ## Like-Like Ores Features
