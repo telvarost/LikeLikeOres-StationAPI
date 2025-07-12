@@ -1,0 +1,10 @@
+tab.@.copper_ore.name=Like Like Ores
+
+tile.@.copper_ore.name=Copper Ore
+tile.@.silver_ore.name=Silver Ore
+
+item.@.tin_ingot.name=Tin Ingot
+item.@.copper_ingot.name=Copper Ingot
+item.@.silver_ingot.name=Silver Ingot
+item.@.bronze_ingot.name=Bronze Ingot
+item.@.electrum_ingot.name=Electrum Ingot

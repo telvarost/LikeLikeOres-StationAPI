@@ -21,13 +21,18 @@
   "environment": "*",
   "entrypoints": {
     "stationapi:event_bus": [
+      "com.github.telvarost.likelikeores.LikeLikeOres",
+      "com.github.telvarost.likelikeores.events.init.BlockListener",
+      "com.github.telvarost.likelikeores.events.init.ItemListener",
+      "com.github.telvarost.likelikeores.events.init.RecipeListener"
     ],
     "stationapi:event_bus_client": [
+      "com.github.telvarost.likelikeores.events.client.TextureListener"
     ],
     "stationapi:event_bus_server": [
     ],
-    "gcapi3": [
-      "com.github.telvarost.likelikeores.Config"
+    "bhcreative:event_bus": [
+      "com.github.telvarost.likelikeores.events.init.CreativeListener"
     ]
   },
   "mixins": [
@@ -35,12 +40,11 @@
   ],
 
   "depends": {
-    "minecraft": "1.0.0-beta.7.3"
+    "minecraft": "1.0.0-beta.7.3",
+    "stationapi": ">=2.0.0-alpha.3"
   },
 
   "recommends": {
-    "stationapi": ">=2.0.0-alpha.3",
-    "gcapi3": ">=3.0.2",
     "modmenu": "*"
   }
 }
