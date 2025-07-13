@@ -23,9 +23,9 @@
     "stationapi:event_bus": [
       "com.github.telvarost.likelikeores.LikeLikeOres",
       "com.github.telvarost.likelikeores.events.init.BlockListener",
-      "com.github.telvarost.likelikeores.events.init.InitFinishedListener",
       "com.github.telvarost.likelikeores.events.init.ItemListener",
       "com.github.telvarost.likelikeores.events.init.RecipeListener",
+      "com.github.telvarost.likelikeores.events.BiomeModificationListener",
       "com.github.telvarost.likelikeores.events.ChunkDecorationListener"
     ],
     "stationapi:event_bus_client": [

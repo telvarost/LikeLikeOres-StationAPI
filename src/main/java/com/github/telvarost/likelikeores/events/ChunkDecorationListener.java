@@ -35,18 +35,18 @@ public class ChunkDecorationListener {
             List<BiomeGeneration> biomeGenerationList = TIN_ORE_SETTINGS.settingOreBiomeGenerationList.getBiomeGenerationList();
 
             if (null != biomeGenerationList) {
-                for (int biomeIndex = 0; biomeIndex < biomeGenerationList.size(); biomeIndex++) {
-                    BiomeGeneration biomeGeneration = biomeGenerationList.get(biomeIndex);
+                //for (int biomeIndex = 0; biomeIndex < biomeGenerationList.size(); biomeIndex++) {
+                    BiomeGeneration biomeGeneration = biomeGenerationList.get(0);
 
-                    if (biomeGeneration.biome() == biomeToDecorate) {
+                    //if (biomeGeneration.biome().name.equals(biomeToDecorate.name)) {
                         for(generationAttemptIndex = 0; generationAttemptIndex < biomeGeneration.generationAttempts(); ++generationAttemptIndex) {
                             xPos = blockX + random.nextInt(16);
-                            yPos = random.nextInt(biomeGeneration.heightOffset() + biomeGeneration.heightRandomBound1()) + random.nextInt(biomeGeneration.heightRandomBound2());
+                            yPos = biomeGeneration.heightOffset() + random.nextInt(biomeGeneration.heightRandomBound1()) + random.nextInt(biomeGeneration.heightRandomBound2());
                             zPos = blockZ + random.nextInt(16);
                             (new CustomOreFeature(biomeGeneration.hostBlockId(), TIN_ORE.id, biomeGeneration.oreCount())).generate(world, random, xPos, yPos, zPos);
                         }
-                    }
-                }
+                    //}
+                //}
             }
         }
 
@@ -54,18 +54,18 @@ public class ChunkDecorationListener {
             List<BiomeGeneration> biomeGenerationList = COPPER_ORE_SETTINGS.settingOreBiomeGenerationList.getBiomeGenerationList();
 
             if (null != biomeGenerationList) {
-                for (int biomeIndex = 0; biomeIndex < biomeGenerationList.size(); biomeIndex++) {
-                    BiomeGeneration biomeGeneration = biomeGenerationList.get(biomeIndex);
+                //for (int biomeIndex = 0; biomeIndex < biomeGenerationList.size(); biomeIndex++) {
+                    BiomeGeneration biomeGeneration = biomeGenerationList.get(0);
 
-                    if (biomeGeneration.biome() == biomeToDecorate) {
+                    //if (biomeGeneration.biome().name.equals(biomeToDecorate.name)) {
                         for(generationAttemptIndex = 0; generationAttemptIndex < biomeGeneration.generationAttempts(); ++generationAttemptIndex) {
                             xPos = blockX + random.nextInt(16);
-                            yPos = random.nextInt(biomeGeneration.heightOffset() + biomeGeneration.heightRandomBound1()) + random.nextInt(biomeGeneration.heightRandomBound2());
+                            yPos = biomeGeneration.heightOffset() + random.nextInt(biomeGeneration.heightRandomBound1()) + random.nextInt(biomeGeneration.heightRandomBound2());
                             zPos = blockZ + random.nextInt(16);
                             (new CustomOreFeature(biomeGeneration.hostBlockId(), COPPER_ORE.id, biomeGeneration.oreCount())).generate(world, random, xPos, yPos, zPos);
                         }
-                    }
-                }
+                    //}
+                //}
             }
         }
 
@@ -73,18 +73,18 @@ public class ChunkDecorationListener {
             List<BiomeGeneration> biomeGenerationList = SILVER_ORE_SETTINGS.settingOreBiomeGenerationList.getBiomeGenerationList();
 
             if (null != biomeGenerationList) {
-                for (int biomeIndex = 0; biomeIndex < biomeGenerationList.size(); biomeIndex++) {
-                    BiomeGeneration biomeGeneration = biomeGenerationList.get(biomeIndex);
+                //for (int biomeIndex = 0; biomeIndex < biomeGenerationList.size(); biomeIndex++) {
+                    BiomeGeneration biomeGeneration = biomeGenerationList.get(0);
 
-                    if (biomeGeneration.biome() == biomeToDecorate) {
+                    //if (biomeGeneration.biome().name.equals(biomeToDecorate.name)) {
                         for(generationAttemptIndex = 0; generationAttemptIndex < biomeGeneration.generationAttempts(); ++generationAttemptIndex) {
                             xPos = blockX + random.nextInt(16);
-                            yPos = random.nextInt(biomeGeneration.heightOffset() + biomeGeneration.heightRandomBound1()) + random.nextInt(biomeGeneration.heightRandomBound2());
+                            yPos = biomeGeneration.heightOffset() + random.nextInt(biomeGeneration.heightRandomBound1()) + random.nextInt(biomeGeneration.heightRandomBound2());
                             zPos = blockZ + random.nextInt(16);
                             (new CustomOreFeature(biomeGeneration.hostBlockId(), SILVER_ORE.id, biomeGeneration.oreCount())).generate(world, random, xPos, yPos, zPos);
                         }
-                    }
-                }
+                    //}
+                //}
             }
         }
     }
