@@ -10,6 +10,7 @@ public class TextureListener {
 
     @EventListener
     public void registerTextures(TextureRegisterEvent event) {
+
         int tinOreTextureId        = Atlases.getTerrain().addTexture(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "block/tin_ore")).index;
         int copperOreTextureId     = Atlases.getTerrain().addTexture(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "block/copper_ore")).index;
         int silverOreTextureId     = Atlases.getTerrain().addTexture(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "block/silver_ore")).index;

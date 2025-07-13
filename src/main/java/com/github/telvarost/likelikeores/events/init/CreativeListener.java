@@ -10,19 +10,19 @@ import paulevs.bhcreative.api.SimpleTab;
 import paulevs.bhcreative.registry.TabRegistryEvent;
 
 public class CreativeListener {
+
     public static CreativeTab tabLikeLikeOres;
 
     @EventListener
-    public void onTabInit(TabRegistryEvent event){
+    public void onTabInit(TabRegistryEvent event) {
+
         tabLikeLikeOres = new SimpleTab(LikeLikeOres.LIKE_LIKE_ORES.id("copper_ore"), LikeLikeOres.COPPER_ORE.asItem());
         event.register(tabLikeLikeOres);
 
-        for (Block block : LikeLikeOres.blocks){
+        for (Block block : LikeLikeOres.blocks)
             tabLikeLikeOres.addItem(new ItemStack(block.asItem(), 1));
-        }
 
-        for (Item item : LikeLikeOres.items){
+        for (Item item : LikeLikeOres.items)
             tabLikeLikeOres.addItem(new ItemStack(item, 1));
-        }
     }
 }

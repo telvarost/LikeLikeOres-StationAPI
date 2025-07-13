@@ -1,8 +1,8 @@
 package com.github.telvarost.likelikeores.events.init;
 
 import com.github.telvarost.likelikeores.LikeLikeOres;
-import com.github.telvarost.likelikeores.block.MetalOreBlock;
-import com.github.telvarost.likelikeores.block.MetalOreStorageBlock;
+import com.github.telvarost.likelikeores.block.LikeLikeOreBlock;
+import com.github.telvarost.likelikeores.block.LikeLikeOreStorageBlock;
 import net.mine_diver.unsafeevents.listener.EventListener;
 import net.minecraft.block.Block;
 import net.modificationstation.stationapi.api.event.registry.BlockRegistryEvent;
@@ -11,16 +11,19 @@ import net.modificationstation.stationapi.api.util.Identifier;
 import static net.minecraft.block.Block.*;
 
 public class BlockListener {
+
     @EventListener
     public void registerBlocks(BlockRegistryEvent event) {
-        LikeLikeOres.TIN_ORE    = new MetalOreBlock(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "tin_ore")   , LikeLikeOres.TIN_ORE_SETTINGS.settingOreTextureId.getTextureId())   .setHardness(3.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(LikeLikeOres.LIKE_LIKE_ORES, "tin_ore");
-        LikeLikeOres.COPPER_ORE = new MetalOreBlock(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "copper_ore"), LikeLikeOres.COPPER_ORE_SETTINGS.settingOreTextureId.getTextureId()).setHardness(3.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(LikeLikeOres.LIKE_LIKE_ORES, "copper_ore");
-        LikeLikeOres.SILVER_ORE = new MetalOreBlock(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "silver_ore"), LikeLikeOres.SILVER_ORE_SETTINGS.settingOreTextureId.getTextureId()).setHardness(3.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(LikeLikeOres.LIKE_LIKE_ORES, "silver_ore");
-        LikeLikeOres.TIN_BLOCK  = new MetalOreStorageBlock(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "tin_block"), LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId()).setHardness(3.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(LikeLikeOres.LIKE_LIKE_ORES, "tin_block");
-        LikeLikeOres.COPPER_BLOCK  = new MetalOreStorageBlock(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "copper_block"), LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId()).setHardness(3.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(LikeLikeOres.LIKE_LIKE_ORES, "copper_block");
-        LikeLikeOres.SILVER_BLOCK  = new MetalOreStorageBlock(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "silver_block"), LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId()).setHardness(3.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(LikeLikeOres.LIKE_LIKE_ORES, "silver_block");
-        LikeLikeOres.BRONZE_BLOCK  = new MetalOreStorageBlock(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "bronze_block"), LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId()).setHardness(3.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(LikeLikeOres.LIKE_LIKE_ORES, "bronze_block");
-        LikeLikeOres.ELECTRUM_BLOCK  = new MetalOreStorageBlock(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "electrum_block"), LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId()).setHardness(3.0F).setResistance(5.0F).setSoundGroup(STONE_SOUND_GROUP).setTranslationKey(LikeLikeOres.LIKE_LIKE_ORES, "electrum_block");
+
+        LikeLikeOres.TIN_ORE = new LikeLikeOreBlock("tin_ore", LikeLikeOres.TIN_ORE_SETTINGS.settingOreTextureId.getTextureId());
+        LikeLikeOres.COPPER_ORE = new LikeLikeOreBlock("copper_ore", LikeLikeOres.COPPER_ORE_SETTINGS.settingOreTextureId.getTextureId());
+        LikeLikeOres.SILVER_ORE = new LikeLikeOreBlock("silver_ore", LikeLikeOres.SILVER_ORE_SETTINGS.settingOreTextureId.getTextureId());
+
+        LikeLikeOres.TIN_BLOCK  = new LikeLikeOreStorageBlock("tin_block", LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId());
+        LikeLikeOres.COPPER_BLOCK  = new LikeLikeOreStorageBlock("copper_block", LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId());
+        LikeLikeOres.SILVER_BLOCK  = new LikeLikeOreStorageBlock("silver_block", LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId());
+        LikeLikeOres.BRONZE_BLOCK  = new LikeLikeOreStorageBlock("bronze_block", LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId());
+        LikeLikeOres.ELECTRUM_BLOCK  = new LikeLikeOreStorageBlock("electrum_block", LikeLikeOres.TIN_INGOT_SETTINGS.settingIngotBlockTextureId.getTextureId());
 
         LikeLikeOres.blocks = new Block[]
         { LikeLikeOres.TIN_ORE
