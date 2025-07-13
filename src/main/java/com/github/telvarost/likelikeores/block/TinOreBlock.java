@@ -11,10 +11,10 @@ public class TinOreBlock extends TemplateOreBlock {
         super(identifier, textureId);
     }
 
-    @Override
-    public int getTexture(int side) {
-        return LikeLikeOres.TIN_ORE_TEXTURE;
-    }
+//    @Override
+//    public int getTexture(int side) {
+//        return LikeLikeOres.TIN_ORE_SETTINGS.integerSettingOreGeneration.getValue();
+//    }
 
     @Override
     public int getDroppedItemId(int blockMeta, Random random) {

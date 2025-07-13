@@ -40,7 +40,7 @@ public class OverworldChunkGeneratorMixin {
         int blockZ = z * 16;
         Biome biomeToDecorate = this.world.method_1781().getBiome(blockX + 16, blockZ + 16);
 
-        if (  LikeLikeOres.TIN_ORE_SETTINGS.settingOreGeneration.isEnabled
+        if (  LikeLikeOres.TIN_ORE_SETTINGS.settingOreGeneration.getIsEnabled()
            && (  Biome.TAIGA      == biomeToDecorate
               || Biome.TUNDRA     == biomeToDecorate
               || Biome.ICE_DESERT == biomeToDecorate
@@ -54,7 +54,7 @@ public class OverworldChunkGeneratorMixin {
             }
         }
 
-        if (  LikeLikeOres.COPPER_ORE_SETTINGS.settingOreGeneration.isEnabled
+        if (  LikeLikeOres.COPPER_ORE_SETTINGS.settingOreGeneration.getIsEnabled()
            && (  Biome.SWAMPLAND     == biomeToDecorate
               )
         ) {
@@ -66,7 +66,7 @@ public class OverworldChunkGeneratorMixin {
             }
         }
 
-        if (  LikeLikeOres.SILVER_ORE_SETTINGS.settingOreGeneration.isEnabled
+        if (  LikeLikeOres.SILVER_ORE_SETTINGS.settingOreGeneration.getIsEnabled()
            && (  Biome.RAINFOREST    == biomeToDecorate
               || Biome.DESERT        == biomeToDecorate
               || Biome.SAVANNA       == biomeToDecorate

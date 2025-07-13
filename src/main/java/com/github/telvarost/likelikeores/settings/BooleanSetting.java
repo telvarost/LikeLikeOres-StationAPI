@@ -1,12 +1,16 @@
 package com.github.telvarost.likelikeores.settings;
 
-public class Setting {
-    public boolean isEnabled = false;
-    public int priority = -1;
+public class BooleanSetting {
+    private boolean isEnabled = false;
+    private int priority = -1;
 
-    public Setting(boolean initIsEnabled, int initPriority) {
+    public BooleanSetting(boolean initIsEnabled, int initPriority) {
         isEnabled = initIsEnabled;
         priority = initPriority;
+    }
+
+    public boolean getIsEnabled() {
+        return isEnabled;
     }
 
     public boolean setIsEnabled(boolean attemptIsEnabled, int attemptPriority) {

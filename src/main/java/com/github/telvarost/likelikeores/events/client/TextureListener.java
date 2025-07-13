@@ -10,9 +10,13 @@ public class TextureListener {
 
     @EventListener
     public void registerTextures(TextureRegisterEvent event) {
-        LikeLikeOres.TIN_ORE_TEXTURE    = Atlases.getTerrain().addTexture(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "block/tin_ore")).index;
-        LikeLikeOres.COPPER_ORE_TEXTURE = Atlases.getTerrain().addTexture(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "block/copper_ore")).index;
-        LikeLikeOres.SILVER_ORE_TEXTURE = Atlases.getTerrain().addTexture(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "block/silver_ore")).index;
+        int tinOreTextureId = Atlases.getTerrain().addTexture(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "block/tin_ore")).index;
+        int copperOreTextureId = Atlases.getTerrain().addTexture(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "block/copper_ore")).index;
+        int silverOreTextureId = Atlases.getTerrain().addTexture(Identifier.of(LikeLikeOres.LIKE_LIKE_ORES, "block/silver_ore")).index;
+
+        LikeLikeOres.TIN_ORE_SETTINGS.settingOreTextureId   .setTextureId(LikeLikeOres.TIN_ORE   , tinOreTextureId, 0);
+        LikeLikeOres.COPPER_ORE_SETTINGS.settingOreTextureId.setTextureId(LikeLikeOres.COPPER_ORE, copperOreTextureId, 0);
+        LikeLikeOres.SILVER_ORE_SETTINGS.settingOreTextureId.setTextureId(LikeLikeOres.SILVER_ORE, silverOreTextureId, 0);
 
         LikeLikeOres.TIN_INGOT     .setTexture(LikeLikeOres.LIKE_LIKE_ORES.id("item/tin_ingot"));
         LikeLikeOres.COPPER_INGOT  .setTexture(LikeLikeOres.LIKE_LIKE_ORES.id("item/copper_ingot"));

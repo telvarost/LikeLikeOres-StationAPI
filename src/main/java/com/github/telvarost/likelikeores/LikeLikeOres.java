@@ -1,7 +1,7 @@
 package com.github.telvarost.likelikeores;
 
 import com.github.telvarost.likelikeores.settings.OreSettings;
-import com.github.telvarost.likelikeores.settings.Setting;
+import com.github.telvarost.likelikeores.settings.BooleanSetting;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.modificationstation.stationapi.api.mod.entrypoint.Entrypoint;
@@ -12,10 +12,6 @@ public class LikeLikeOres {
     //public static final Namespace NAMESPACE = Namespace.resolve();
     @Entrypoint.Namespace
     public static Namespace LIKE_LIKE_ORES = Null.get();
-
-    public static int TIN_ORE_TEXTURE = 0;
-    public static int COPPER_ORE_TEXTURE = 0;
-    public static int SILVER_ORE_TEXTURE = 0;
 
     public static Block TIN_ORE;
     public static Block COPPER_ORE;
@@ -33,9 +29,9 @@ public class LikeLikeOres {
     public static Item ELECTRUM_INGOT;
     public static Item[] items;
 
-    public static Setting TIN_INGOT_SETTING      = new Setting(false, 0);
-    public static Setting COPPER_INGOT_SETTING   = new Setting(false, 0);
-    public static Setting SILVER_INGOT_SETTING   = new Setting(false, 0);
-    public static Setting BRONZE_INGOT_SETTING   = new Setting(false, 0);
-    public static Setting ELECTRUM_INGOT_SETTING = new Setting(false, 0);
+    public static BooleanSetting tinIngotBooleanSetting = new BooleanSetting(false, 0);
+    public static BooleanSetting copperIngotBooleanSetting = new BooleanSetting(false, 0);
+    public static BooleanSetting silverIngotBooleanSetting = new BooleanSetting(false, 0);
+    public static BooleanSetting bronzeIngotBooleanSetting = new BooleanSetting(false, 0);
+    public static BooleanSetting electrumIngotBooleanSetting = new BooleanSetting(false, 0);
 }
