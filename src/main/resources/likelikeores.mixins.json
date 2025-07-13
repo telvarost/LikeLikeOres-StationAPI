@@ -4,8 +4,6 @@
   "package": "com.github.telvarost.likelikeores.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "NetherChunkGeneratorMixin",
-    "OverworldChunkGeneratorMixin"
   ],
   "server": [
   ],
