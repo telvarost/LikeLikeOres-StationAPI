@@ -1,20 +1,14 @@
 package com.github.telvarost.likelikeores.block;
 
-import com.github.telvarost.likelikeores.LikeLikeOres;
 import net.modificationstation.stationapi.api.template.block.TemplateOreBlock;
 import net.modificationstation.stationapi.api.util.Identifier;
 
 import java.util.Random;
 
-public class TinOreBlock extends TemplateOreBlock {
-    public TinOreBlock(Identifier identifier, int textureId) {
+public class MetalOreBlock extends TemplateOreBlock {
+    public MetalOreBlock(Identifier identifier, int textureId) {
         super(identifier, textureId);
     }
-
-//    @Override
-//    public int getTexture(int side) {
-//        return LikeLikeOres.TIN_ORE_SETTINGS.integerSettingOreGeneration.getValue();
-//    }
 
     @Override
     public int getDroppedItemId(int blockMeta, Random random) {
